@@ -1,0 +1,20 @@
+main {
+    min-height: 96vh;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+}
+
+#output {
+    padding: 5px;
+}
+
+#output ul {
+    padding: 25px!important;
+    border: 1px solid gray;
+}
+ul li {
+    color: #fff!important;
+}

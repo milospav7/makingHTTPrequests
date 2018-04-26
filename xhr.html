@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Evolution of making HTTP Requests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark text-white">
+    <main>
+        <nav class="navbar navbar-dark navbar-expand bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Making HTTP Requests</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link mx-3 border">HOME</a>
+                        <a href="xhr.html" class="nav-item nav-link mx-3 border active">Ajax - XHR</a>
+                        <a href="fetches6.html" class="nav-item nav-link mx-3 border ">Fetch with Promise - ES6</a>
+                        <a href="fetches7.html" class="nav-item nav-link mx-3 border">Fetch with Async/Await - ES7</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <p class="lead py-3">Ajax stands for asynchronous JavaScript and XML. And XHR stands for XMLHttpRequest, an method in JavasScript for making http request object.</p>
+            <p>Clicking on button action from an fake API will be performed, and below that few images with javascript code will be represented. For more details feel free to explore .js files in 'src' project folder! :)</p>
+            <hr style="background-color: white;">
+            <p class="mb-2"><span class="text-success">GET</span> - get data from API</p>
+            <p class="mb-2"><span class="text-info">PUT</span> - update API data</p>
+            <p class="mb-2"><span class="text-primary">POST</span> - post data on API</p>
+            <p class="mb-2"><span class="text-danger">DELETE</span> - delete data from API</p>
+            <hr style="background-color: white;">
+            <div class="buttons text-center">
+                <button id="get" class="btn btn-success px-5 mx-3">GET</button>
+                <button id="put" class="btn btn-info px-5 mx-3">PUT</button>
+                <button id="post" class="btn btn-primary px-5 mx-3">POST</button>
+                <button id="delet" class="btn btn-danger px-5 mx-3">DELETE</button>
+            </div>
+            <div id="output" class="py-4"></div>
+            <div id="image" class="py-3"></div>
+        </div>
+    </main>
+    <footer class="text-center border-top py-2">All rights reserved &#174; created by
+        <span class="text-success font-weight-bold">Milos Pavlovic</span>
+    </footer>
+
+
+    <script src="src/ajax/httpajax.js"></script>
+    <script src="src/ajax/appajax.js"></script>
+</body>
+
+</html>
